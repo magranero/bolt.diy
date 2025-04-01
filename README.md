@@ -1,3 +1,15 @@
+#Taller para montar una web con Bolt.
+
+##Opciones
+
+- En la nube
+- En local
+
+###En la nube:
+- [Creamos si no tenemos, una cuenta de AWS](https://aws.amazon.com/es/)
+- 
+
+
 # bolt.diy
 
 [![bolt.diy: AI-Powered Full-Stack Web Development in the Browser](./public/social_preview_index.jpg)](https://bolt.diy)
