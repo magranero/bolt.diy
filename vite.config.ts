@@ -93,7 +93,7 @@ export default defineConfig((config) => {
       host: true,
       allowedHosts: [
         'localhost',
-        'boltdiy.mydomain.no'    #<-change this to your url 
+        'bolt.automatizar.net'    #<-change this to your url 
       ],
     },
     build: {
