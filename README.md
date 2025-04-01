@@ -1,14 +1,67 @@
-#Taller para montar una web con Bolt.
+# Taller para montar una web con Bolt.
 
-##Opciones
+## Opciones
 
 - En la nube
 - En local
 
-###En la nube:
-- [Creamos si no tenemos, una cuenta de AWS](https://aws.amazon.com/es/)
-- 
+### En la nube:
 
+1- En la Consola de AWS:
+- [Creamos si no tenemos, una cuenta de AWS](https://aws.amazon.com/es/)
+- Vamos al servicio más sencillo de AWS, El [Lightsail](https://lightsail.aws.amazon.com/ls/webapp/home).
+  Elige una región que te quede cerca. Pestaña Sólo Sistema Operativo: Ubuntu 22.04 LTS.
+- Elegimos el tercero: 2 GB de memoria, Procesamiento de 2 vCPU y Almacenamiento SSD de 60 GB
+- Le damos a crear.
+- Esperamos 2 minutos, le damos a actualizar.
+- Si vemos en su estado En ejecución, ya la tenemos levantada.
+- Pulsamos en los puntitos, administrar
+- Nos vamos a Redes.
+- Donde pone Vincular una IP estática, pulsamos Crear y vincular.
+- Luego arriba del todo, le damos a Reiniciar y esperamos un poco.
+- Donde pone Firewall IPv4 pulsamos en Añadir regla.
+- Ponemos Personalizar, puerto TCP y puerto 3000, añadimos.
+- Ponemos otra, con lo mismo pero el puerto 443, añadimos.
+- Le damos a los puntitos y contectar.
+- escribimos en la terminal y pulsamos ENTER: sudo su
+- escribimos y pulsamos ENTER: curl -sSL https://get.easypanel.io | sh
+- Esperamos a que ponga: Easypanel was installed successfully on your server!
+- Copiamos lo que pone justo debajo, ejemplo: http://13.59.144.165:3000
+- Abre tu navegador favorito y pega lo de arriba en la barra de las URLs
+  
+2- Se abre tu consola de easypanel:
+- Pon tu email y una clave segura. Guardala en el portapapeles que la necesitamos en dos clicks.
+- Acepta condiciones y vamos dentro.
+- Pulsa Settings en el panel izquierdo pulsa general.
+- Donde pone Default Domain, guarda esa dirección en favoritos! Esa será tu dirección de tu panel.
+- Úsala para acceder por el navegador y con tu email y contraseña, desde ahora accederás por ahí.
+- Pulsamos en Dashboard a la izquierda
+- En el centro, donde pone: Projects le damos al Create Project.
+- Llámalo como quieras, por ejemplo bolt. Todo en minúsculas, sin espacios y sin números.
+- Ahora pulsa en Templates.
+- Busca Bolt.diy y pulsa. Pulsa en Create.
+- Te pondrá esto: Bolt.Diy was created successfully y dale a Go to Projects.
+- Esperamos como 3 minutos a que salga algo como esto:
+★═══════════════════════════════════════★
+          B O L T . D I Y
+         ⚡️  Welcome  ⚡️
+★═══════════════════════════════════════★
+
+<img width="1052" alt="image" src="https://github.com/user-attachments/assets/76b30f00-0765-4fae-bdaf-897049a2e1b2" />
+Ahora pulsa el botón de abrir, 
+
+3- Se abre tu bolt
+- Necesitas una API de un LLM. ¿Quieres uno gratis?
+https://github.com/cheahjs/free-llm-api-resources
+
+4.- Carga 5 euros de https://console.anthropic.com/dashboard en https://console.anthropic.com/settings/billing
+- Crea un TOKEN.
+- Pégalo en Bolt.
+
+NOTA: Si te has perdido: https://bolt.myaibuilt.app/
+
+
+____________________
 
 # bolt.diy
 
